@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Sign-up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="flex-container">
+        <div class="left-flex-content">
+            <div class="logo-text-container">
+                <div class="logo-left"><img src="./img/coffee.png" alt="coffee"></div>
+                <p>Coffee Co.</p>
+            </div>
+            
+        </div>
+        <div class="right-flex-content">
+            <div class="text-right">Kittens all around to play and interact all day long. Take a sip and help a kitten!</div>
+            <div class="form-area">
+                <form action="#" method="post" id="user-form">
+                    <div class="first-info">
+                        <div>
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div>
+                            <label for="pass">Password</label>
+                            <input type="password" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title=": Please input 8 characters with 1 small letter, 1 big letter and 1 number character">
+                            <small class="x"></small>
+                        </div>
+                    </div>
+                    <div class="second-info">
+                        <div>
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name">
+                        </div>
+                        <div>
+                            <label for="phone">Phone/Tel#</label>
+                            <input type="text" id="phone">
+                        </div>
+                        <div>
+                            <label for="confirm-pass">Confirm Password</label>
+                            <input type="password" id="confirm-pass">
+                            <small class="x"></small>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="button-right">
+                <button type="submit" form="user-form" id="btn-submit">Sign Up</button>
+                <p>Already have an account? <em><a href="index.html">Log In</a></em></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
