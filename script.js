@@ -10,5 +10,4 @@ submit.addEventListener('click',(event)=>{
         const x = document.querySelector('.x')
         x.textContent = "Password Does not Match"
     }
-    
 })
